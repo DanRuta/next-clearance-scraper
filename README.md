@@ -5,7 +5,7 @@ Next clearance Scraper
 
 A python script to periodically scrape Next's clearance store's items using selenium and email them to you. The items found are cached locally, and any newly found items are sent to the specified email address(es). An example is shown here:
 
-<img width="100%" src="example.png">
+<img width="50%" src="example.png">
 
 
 ## Picking the product types
@@ -13,9 +13,13 @@ A python script to periodically scrape Next's clearance store's items using sele
 The items in the clearance list are not categorised by type, so to choose something, you need to have a look at the results page, and check to see what patterns you see in the text. The best strategy I've found is to pick a list of strings used for sizes. Included is code to select sofas.
 
 
+## Setup
+
+You will need to use python (version 3.6+), and the Chromedriver for selenium. ```pip install selenium```, and place the Chromedriver.exe file either at the location specified in the code (C:/chromedriver.exe), or elsewhere and you can change the location in the code.
+
 ## Running the script
 
-The python script is executed using python (version 3.6+), and the following possible command line arguments:
+The python script is executed using python, and the following possible command line arguments:
 
 |  Argument | Required | What it is | Default value |
 |:-------------:| :-----:| :-----:| :---: |
